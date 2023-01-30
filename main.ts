@@ -12,18 +12,27 @@ input.onButtonPressed(Button.A, function () {
     PA += 1
     Rounds += 1
     ScoreBoard()
+    basic.pause(2000)
+    basic.clearScreen()
+    OLED.clear()
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showString("T")
-    PB += 1
+    Ties += 1
     Rounds += 1
     ScoreBoard()
+    basic.pause(2000)
+    basic.clearScreen()
+    OLED.clear()
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("B")
     PB += 1
     Rounds += 1
     ScoreBoard()
+    basic.pause(2000)
+    basic.clearScreen()
+    OLED.clear()
 })
 input.onGesture(Gesture.Shake, function () {
     PA = 0
